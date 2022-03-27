@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color kGreenColor = Color(0xff58DC84);
+Color kGreenColor = Color(0xff58dc84);
 
 TextStyle myGoogleFont(
     Color? textColor, double myfontSize, FontWeight fontWeight,

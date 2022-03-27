@@ -32,7 +32,6 @@ class DatabaseMethods {
     Reference ref = storage.ref().child('image_$imageId');
     TaskSnapshot taskSnapshot = await ref.putFile(imageFile!);
     return await taskSnapshot.ref.getDownloadURL();
-    //الفرق بين uploadTask و TaskSnapshot ال await
   }
 
   upDateUsersInfo(am.User updatedUser, String currentUserId) {
