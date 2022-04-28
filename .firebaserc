@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "chatappfromscratch"
-  }
+    "default": "chatapp-4690b",
+    "staging": "chatapp-4690b"
+  },
+  "targets": {}
 }
