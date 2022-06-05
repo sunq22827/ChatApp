@@ -174,11 +174,12 @@ class _EditProfileState extends State<EditProfile> {
         isLoading = false;
       });
       // showPhotoIcon();
-      SnackBar snackBar = SnackBar(
-        content: Text('Profile Updated'),
-      );
-
-      scaffoldkey.currentState!.showSnackBar(snackBar);
+      // SnackBar snackBar = SnackBar(
+      //   content: Text('Profile Updated'),
+      // );
+      //
+      // scaffoldkey.currentState!.showSnackBar(snackBar);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("'Profile Updated'")));
       //databaseMethods.addToNewsFeed(widget.uid);
     }
   }

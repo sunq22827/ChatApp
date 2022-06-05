@@ -144,18 +144,25 @@ class _UploadState extends State<Upload> {
                 width: 200.0,
                 height: 100.0,
                 alignment: Alignment.center,
-                child: RaisedButton.icon(
+                child: ElevatedButton.icon(
                   label: Text(
                     "Use Current Location",
                     style: TextStyle(color: Colors.white),
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
-                  ),
-                  color: Colors.grey[500],
+                  // shape: RoundedRectangleBorder(
+                  //   borderRadius: BorderRadius.circular(30.0),
+                  // ),
+                  // color: Colors.grey[500],
                   onPressed: () {
                     getUserLocation();
                   },
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                    // color: Colors.grey[500],
+                    primary: Theme.of(context).colorScheme.primary,
+                  ),
                   icon: Icon(
                     Icons.my_location,
                     color: Colors.white,

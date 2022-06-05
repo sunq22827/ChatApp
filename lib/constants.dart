@@ -15,5 +15,5 @@ TextStyle myGoogleFont(
 }
 clearCash(){
   PaintingBinding.instance!.imageCache!.clear();
-PaintingBinding.instance!.imageCache!.clearLiveImages();
+  PaintingBinding.instance!.imageCache!.clearLiveImages();
 }
